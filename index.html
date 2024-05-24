@@ -8,134 +8,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="generics.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <header>
       <div class="main-menu-container">
-        <nav>
-          <ul>
-            <li>
-              <a href="">
-                <div class="burger">
-                  <div></div>
-                  <div></div>
-                  <div></div></div
-              ></a>
-              <ul>
-                <li>Microsoft 365</li>
-                <li>Teams</li>
-                <li>Copilot</li>
-                <li>Windows</li>
-                <li>Surface</li>
-                <li>Xbox</li>
-                <li>Deals</li>
-                <li>Small Business</li>
-                <li>Support</li>
-                <li>
-                  Software
-                  <ul>
-                    <li>Windows Apps</li>
-                    <li>AI</li>
-                    <li>OneDrive</li>
-                    <li>Outlook</li>
-                    <li>Skype</li>
-                    <li>OneNote</li>
-                    <li>Microsoft Teams</li>
-                  </ul>
-                </li>
-                <li>
-                  PC & Devices
-                  <ul>
-                    <li>Computers</li>
-                    <li>Shop Xbox</li>
-                    <li>Accessories</li>
-                    <li>VR & mixed reality</li>
-                  </ul>
-                </li>
-                <li>
-                  Entertainment
-                  <ul>
-                    <li>Xbox Game Pass Ultimate</li>
-                    <li>Xbox Live Gold</li>
-                    <li>Xbox games</li>
-                    <li>PC games</li>
-                    <li>Windows digital games</li>
-                    <li>Movies & TV</li>
-                  </ul>
-                </li>
-                <li>
-                  Business
-                  <ul>
-                    <li>Microsoft Cloud</li>
-                    <li>Microsoft Security</li>
-                    <li>Azure</li>
-                    <li>Dynamics 365</li>
-                    <li>Microsoft 365 for business</li>
-                    <li>Microsoft Industry</li>
-                    <li>Microsoft Power Platform</li>
-                    <li>Windows 365</li>
-                  </ul>
-                </li>
-                <li>
-                  Developer & IT
-                  <ul>
-                    <li>Developer Center</li>
-                    <li>Documentation</li>
-                    <li>Microsoft Learn</li>
-                    <li>Microsoft Tech Community</li>
-                    <li>Azure Marketplace</li>
-                    <li>AppSource</li>
-                    <li>Visual Studio</li>
-                  </ul>
-                </li>
-                <li>
-                  Other
-                  <ul>
-                    <li>Microsoft Rewards</li>
-                    <li>Free downloads & security</li>
-                    <li>Education</li>
-                    <li>Virtual workshops and training</li>
-                    <li>Gift cards</li>
-                    <li>Licensing</li>
-                    <li>Microsoft Experience Centre</li>
-                  </ul>
-                </li>
-                <li>View Sitemap</li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+        <label for="hamburger">
+          <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </label>
+        <input type="checkbox" id="hamburger" name="hamburger" />
+        <div class="main-menu">
+          <nav>
+            <ul>
+              <li>Microsoft 365</li>
+              <li>Teams</li>
+              <li>Copilot</li>
+              <li>Windows</li>
+              <li>Surface</li>
+              <li>Xbox</li>
+              <li>Deals</li>
+              <li>Small Business</li>
+              <li>Support</li>
+              <li>
+                <label for="open-sub-menu-1"
+                  ><span>Software</span> <i class="chevron"></i>
+                </label>
+                <input
+                  type="checkbox"
+                  id="open-sub-menu-1"
+                  name="open-sub-menu-1"
+                />
+                <ul class="sub-menu-1">
+                  <li>Windows Apps</li>
+                  <li>AI</li>
+                  <li>OneDrive</li>
+                  <li>Outlook</li>
+                  <li>Skype</li>
+                  <li>OneNote</li>
+                  <li>Microsoft Teams</li>
+                </ul>
+              </li>
+              <li>
+                <label for="open-sub-menu-2"
+                  ><span> PC & Devices</span> <i class="chevron"></i>
+                </label>
+                <input
+                  type="checkbox"
+                  id="open-sub-menu-2"
+                  name="open-sub-menu-2"
+                />
+                <ul class="sub-menu-2">
+                  <li>Computers</li>
+                  <li>Shop Xbox</li>
+                  <li>Accessories</li>
+                  <li>VR & mixed reality</li>
+                </ul>
+              </li>
+              <li>
+                <label for="open-sub-menu-3"
+                  ><span> Entertainment</span> <i class="chevron"></i>
+                </label>
+                <input
+                  type="checkbox"
+                  id="open-sub-menu-3"
+                  name="open-sub-menu-3"
+                />
+                <ul class="sub-menu-3">
+                  <li>Xbox Game Pass Ultimate</li>
+                  <li>Xbox Live Gold</li>
+                  <li>Xbox games</li>
+                  <li>PC games</li>
+                  <li>Windows digital games</li>
+                  <li>Movies & TV</li>
+                </ul>
+              </li>
+              <li>
+                <label for="open-sub-menu-4"
+                  ><span> Business</span> <i class="chevron"></i>
+                </label>
+                <input
+                  type="checkbox"
+                  id="open-sub-menu-4"
+                  name="open-sub-menu-4"
+                />
+                <ul class="sub-menu-4">
+                  <li>Microsoft Cloud</li>
+                  <li>Microsoft Security</li>
+                  <li>Azure</li>
+                  <li>Dynamics 365</li>
+                  <li>Microsoft 365 for business</li>
+                  <li>Microsoft Industry</li>
+                  <li>Microsoft Power Platform</li>
+                  <li>Windows 365</li>
+                </ul>
+              </li>
+              <li>
+                <label for="open-sub-menu-5"
+                  ><span>Developer & IT</span> <i class="chevron"></i>
+                </label>
+                <input
+                  type="checkbox"
+                  id="open-sub-menu-5"
+                  name="open-sub-menu-5"
+                />
+                <ul class="sub-menu-5">
+                  <li>Developer Center</li>
+                  <li>Documentation</li>
+                  <li>Microsoft Learn</li>
+                  <li>Microsoft Tech Community</li>
+                  <li>Azure Marketplace</li>
+                  <li>AppSource</li>
+                  <li>Visual Studio</li>
+                </ul>
+              </li>
+              <li>
+                <label for="open-sub-menu-6"
+                  ><span> Other</span> <i class="chevron"></i>
+                </label>
+                <input
+                  type="checkbox"
+                  id="open-sub-menu-6"
+                  name="open-sub-menu-6"
+                />
+                <ul class="sub-menu-6">
+                  <li>Microsoft Rewards</li>
+                  <li>Free downloads & security</li>
+                  <li>Education</li>
+                  <li>Virtual workshops and training</li>
+                  <li>Gift cards</li>
+                  <li>Licensing</li>
+                  <li>Microsoft Experience Centre</li>
+                </ul>
+              </li>
+              <li>View Sitemap</li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="links">
         <div>
+          <img
+            src="./assets/icons/surface-devices-icon.svg"
+            alt="laptop icon"
+          />
           <a href="">Shop for Surface devices </a>
         </div>
 
         <div>
+          <img src="./assets/icons/xbox-icon.svg" alt="xbox icon" />
           <a href="">Shop Xbox games and consoles</a>
         </div>
 
         <div>
+          <img src="./assets//icons/pc-icon.svg" alt="pc icon" />
           <a href="">Find your next PC</a>
         </div>
 
         <div>
+          <img src="./assets/icons/microsoft-icon.svg" alt="microsoft icon" />
           <a href=""> Choose your Microsoft 365</a>
         </div>
 
         <div>
+          <img
+            src="./assets/icons/accessories-icon.svg"
+            alt="accessories icon"
+          />
           <a href="">Shop for accessories </a>
         </div>
 
         <div>
+          <img src="./assets/icons/business-icon.svg" alt="suitcase icon" />
           <a href="">Shop Business</a>
         </div>
 
         <div>
-          <a href="">Find deals</a>
+          <img src="./assets/icons/price-tag-icon.avif" alt="price tag icon" />
+          <a href="">Find Deals</a>
         </div>
       </section>
 

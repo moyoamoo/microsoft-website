@@ -1,18 +1,42 @@
-@font-face {
-  font-family: "Segoe UI Normal";
-  src: url(./assets/fonts/normal.woff2);
-}
-@font-face {
-  font-family: "Segoe UI Bold";
-  src: url(./assets/fonts/bold.woff2);
-}
-@font-face {
-  font-family: "Segoe UI Light";
-  src: url(./assets/fonts/light.woff2);
-}
 :root {
   --accent-1: #f2f2f2;
   --line: #e6e6e6;
+}
+
+.main-menu {
+  display: none;
+  font-family: "Segoe UI Normal", Arial, Helvetica, sans-serif;
+}
+.main-menu li {
+  background-color: var(--accent-1);
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+}
+.main-menu nav ul ul {
+  display: none;
+}
+.main-menu nav ul ul li:first-child {
+  margin-top: 0.5rem;
+}
+.main-menu nav ul ul li:last-child {
+  border-bottom: none;
+  margin-bottom: -1rem;
+}
+.main-menu label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.main-menu label .chevron:after {
+  content: " ";
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  height: 7px;
+  width: 7px;
+  transform: rotate(45deg);
 }
 
 .burger div {
@@ -22,18 +46,22 @@
   background-color: #000;
 }
 
-.main-menu-container {
-  font-family: "Segoe UI Normal", Arial, Helvetica, sans-serif;
+#hamburger:checked ~ .main-menu,
+#open-sub-menu-1:checked ~ .sub-menu-1,
+#open-sub-menu-2:checked ~ .sub-menu-2,
+#open-sub-menu-3:checked ~ .sub-menu-3,
+#open-sub-menu-4:checked ~ .sub-menu-4,
+#open-sub-menu-5:checked ~ .sub-menu-5,
+#open-sub-menu-6:checked ~ .sub-menu-6 {
+  display: initial;
 }
-.main-menu-container nav ul ul {
+
+#hamburger,
+#open-sub-menu-1,
+#open-sub-menu-2,
+#open-sub-menu-3,
+#open-sub-menu-4,
+#open-sub-menu-5,
+#open-sub-menu-6 {
   display: none;
-}
-.main-menu-container nav ul li:focus-within > ul {
-  display: inherit;
-}
-.main-menu-container li {
-  background-color: var(--accent-1);
-  padding: 1.5rem;
-  border-bottom: 1px solid var(--line);
-  font-size: 15px;
 }/*# sourceMappingURL=header.css.map */

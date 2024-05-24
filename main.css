@@ -1,0 +1,7 @@
+.links {
+  display: flex;
+  flex-direction: column;
+}
+.links img {
+  width: 50px;
+}/*# sourceMappingURL=main.css.map */

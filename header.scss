@@ -1,26 +1,69 @@
-@font-face {
-  font-family: "Segoe UI Normal";
-  src: url(./assets/fonts/normal.woff2);
-}
+// @font-face {
+//   font-family: "Segoe UI Normal";
+//   src: url(./assets/fonts/normal.woff2);
+// }
 
-@font-face {
-    font-family: "Segoe UI Bold" ;
-    src: url(./assets/fonts/bold.woff2);
-}
+// @font-face {
+//   font-family: "Segoe UI Bold";
+//   src: url(./assets/fonts/bold.woff2);
+// }
 
-@font-face {
-    font-family: "Segoe UI Light"  ;
-    src: url(./assets/fonts/light.woff2);
-}
-
-
+// @font-face {
+//   font-family: "Segoe UI Light";
+//   src: url(./assets/fonts/light.woff2);
+// }
 
 :root {
   --accent-1: #f2f2f2;
   --line: #e6e6e6;
 }
 
-//burger for menu 
+//hide menu
+.main-menu {
+  display: none;
+  font-family: "Segoe UI Normal", Arial, Helvetica, sans-serif;
+
+  li {
+    background-color: var(--accent-1);
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+  }
+
+  //hide sub menu
+  nav ul ul {
+    display: none;
+  }
+
+  nav ul ul li:first-child {
+    margin-top: 0.5rem;
+  }
+  nav ul ul li:last-child {
+    border-bottom: none;
+    margin-bottom: -1rem;
+  }
+
+  //label to open sub menu
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    //create chevron
+    .chevron:after {
+      content: " ";
+      display: inline-block;
+      border-bottom: 1px solid #000;
+      border-right: 1px solid #000;
+      height: 7px;
+      width: 7px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+//burger for menu
 .burger {
   div {
     width: 20px;
@@ -29,23 +72,60 @@
     background-color: #000;
   }
 }
-.main-menu-container {
-  font-family: "Segoe UI Normal", Arial, Helvetica, sans-serif;
-  //turn off sub menus
 
-  nav ul ul {
-    display: none;
-  }
-
-  //open up sub menu using tab
-  nav ul li:focus-within > ul {
-    display: inherit;
-  }
-
-  li {
-    background-color: var(--accent-1);
-    padding: 1.5rem;
-    border-bottom: 1px solid var(--line);
-    font-size: 15px;
-  }
+//display menu when hambuger is clicked
+//display sub menu when clicked
+#hamburger:checked ~ .main-menu,
+#open-sub-menu-1:checked ~ .sub-menu-1,
+#open-sub-menu-2:checked ~ .sub-menu-2,
+#open-sub-menu-3:checked ~ .sub-menu-3,
+#open-sub-menu-4:checked ~ .sub-menu-4,
+#open-sub-menu-5:checked ~ .sub-menu-5,
+#open-sub-menu-6:checked ~ .sub-menu-6 {
+  display: initial;
 }
+
+//hide checkbox
+#hamburger,
+#open-sub-menu-1,
+#open-sub-menu-2,
+#open-sub-menu-3,
+#open-sub-menu-4,
+#open-sub-menu-5,
+#open-sub-menu-6 {
+  display: none;
+}
+// .main-menu-container {
+//   font-family: "Segoe UI Normal", Arial, Helvetica, sans-serif;
+//   //turn off sub menus
+
+//   nav ul ul {
+//     display: none;
+//   }
+
+//   //open up sub menu using tab
+//   nav ul li:focus-within > ul {
+//     display: inherit;
+//   }
+
+//   li {
+//     background-color: var(--accent-1);
+//     padding: 1.5rem;
+//     border-bottom: 1px solid var(--line);
+//     font-size: 15px;
+//   }
+// }
+
+// @media screen and (min-width: 850px) {
+//   //remove burger menu
+//   .main-menu-container {
+//     nav > ul > li > a {
+//       display: none;
+//     }
+
+//     // //show main menu
+//     // nav > ul > li > ul {
+//     //   display: initial;
+//     // }
+//   }
+// }
