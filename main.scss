@@ -1,9 +1,108 @@
+@mixin button($background, $padding, $color) {
+  background-color: var($background);
+  padding: $padding;
+  font-family: "Segoe UI Semibold", "Segoe UI", Arial, Helvetica, sans-serif;
+  color: $color;
+}
+
 .links {
   display: flex;
-  flex-direction: column;
 
-  
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   img {
-    width: 50px;
+    width: 40px;
+  }
+
+  a {
+    color: var(--accent-2);
+    font-family: "Segoe UI Semibold", "Segoe UI", Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.card {
+  font-family: "Segoe UI Semibold", "Segoe UI", Arial, Helvetica, sans-serif;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  box-shadow: 2px 2px 1px 0px #eee;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-family: "Segoe UI Normal", "Segoe UI", Arial, Helvetica, sans-serif;
+    margin-top: -15px;
+  }
+}
+
+.card-body {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.new {
+  @include button(--new, 0.7rem, #000);
+}
+
+.secondary-btn {
+  @include button(--accent-2, 1rem, #fff);
+}
+
+.top-card {
+  height: 47vh;
+}
+
+.bottom-card {
+  height: 40vh;
+}
+
+.copilot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.copilot-card {
+  font-family: "Segoe UI Semibold", "Segoe UI", Arial, Helvetica, sans-serif;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+  }
+  p {
+    font-family: "Segoe UI Normal", "Segoe UI", Arial, Helvetica, sans-serif;
+    margin-top: -15px;
+    margin-bottom: 40px;
+
+
   }
 }

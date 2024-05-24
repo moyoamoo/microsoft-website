@@ -11,6 +11,28 @@
   src: url(./assets/fonts/light.woff2);
 }
 
+@font-face {
+  font-family: "Segoe UI Semibold";
+  src: url(/assets/fonts/semibold.woff2);
+}
+
+@font-face {
+  font-family: "Segoe UI Semilight";
+  src: url(/assets/fonts/semilight.woff2);
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url(/assets/fonts/SegoeUI.woff);
+}
+
+:root {
+  --accent-1: #f2f2f2;
+  --line: #e6e6e6;
+  --accent-2: #0067b8;
+  --new: #FFB900
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
