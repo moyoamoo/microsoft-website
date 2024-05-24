@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Segoe UI Normal";
+  src: url(./assets/fonts/normal.woff2);
+}
+@font-face {
+  font-family: "Segoe UI Bold";
+  src: url(./assets/fonts/bold.woff2);
+}
+@font-face {
+  font-family: "Segoe UI Light";
+  src: url(./assets/fonts/light.woff2);
+}
+:root {
+  --accent-1: #f2f2f2;
+  --line: #e6e6e6;
+}
+
+.burger div {
+  width: 20px;
+  height: 1px;
+  margin-bottom: 5px;
+  background-color: #000;
+}
+
+.main-menu-container {
+  font-family: "Segoe UI Normal", Arial, Helvetica, sans-serif;
+}
+.main-menu-container nav ul ul {
+  display: none;
+}
+.main-menu-container nav ul li:focus-within > ul {
+  display: inherit;
+}
+.main-menu-container li {
+  background-color: var(--accent-1);
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+}/*# sourceMappingURL=header.css.map */
