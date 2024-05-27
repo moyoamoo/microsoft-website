@@ -8,18 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="generics.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="carousel.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
     <header>
       <div class="main-menu-container">
-        <div></div>
-        <label for="hamburger">
-          <div class="burger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+        <label for="hamburger" class="hamburger">
+          <span class="burger"> <span></span><span></span><span></span> </span>
         </label>
         <input type="checkbox" id="hamburger" name="hamburger" />
         <div class="main-menu">
@@ -153,6 +150,46 @@
     </header>
 
     <main>
+      <div class="carousel">
+        <div class="slide-container">
+          <div id="slide-1" class="slide">
+            <span class="new">New</span>
+
+            <h2>Meet Surface Pro</h2>
+            <p>
+              This laptop's unrivalled flexibility and AI features like Recall
+              and Cocreator, enable you to do more than you ever imagined.
+            </p>
+            <span class="secondary-btn">Pre-order now</span>
+          </div>
+          <div id="slide-2" class="slide">
+            <span class="new">New</span>
+
+            <h2>Meet Surface Pro</h2>
+            <p>
+              This laptop's unrivalled flexibility and AI features like Recall
+              and Cocreator, enable you to do more than you ever imagined.
+            </p>
+            <span class="secondary-btn">Pre-order now</span>
+          </div>
+        </div>
+        <div class="carousel-nav-container">
+          <input type="radio" id="nav-slide-1" name="carousel-nav" checked />
+          <input type="radio" id="nav-slide-2" name="carousel-nav" />
+
+          <label for="nav-slide-1">
+            <a href="#slide-1"><span class="chevron-left"></span> </a>
+          </label>
+
+          <span class="nav-dot-1 nav-dot"></span>
+          <span class="nav-dot-2 nav-dot"></span>
+
+          <label for="nav-slide-2"
+            ><a href="#slide-2"><span class="chevron-right"></span></a
+          ></label>
+        </div>
+      </div>
+
       <section class="links">
         <div>
           <img
@@ -256,7 +293,10 @@
 
       <section class="copilot">
         <div class="copilot-card">
-          <img src="./assets/card-images/copilot-3-screens-859x540.avif" alt="3 screens with copilot operating" />
+          <img
+            src="./assets/card-images/copilot-3-screens-859x540.avif"
+            alt="3 screens with copilot operating"
+          />
           <div class="copilot-card-body">
             <h3>Unlock your potential with Microsoft Copilot</h3>
 
@@ -270,158 +310,184 @@
       </section>
 
       <section class="business">
-        <div>
-          <img src="" alt="" />
-          <span>New</span>
-          <h3>Surface Laptop 6 for Business</h3>
-          <p>
-            Get exceptional power, better performance and AI-powered tools all
-            in a 13.5-inch or 15-inch design
-          </p>
-          <span>Shop now</span>
+        <h2>For business</h2>
+        <div class="card top-card-business">
+          <img
+            src="./assets/card-images/surface-laptop-6-271x167.avif"
+            alt="person typing on desk"
+          />
+          <div class="card-body">
+            <span class="new">New</span>
+            <h3>Surface Laptop 6 for Business</h3>
+            <p>
+              Get exceptional power, better performance and AI-powered tools all
+              in a 13.5-inch or 15-inch design
+            </p>
+            <span class="secondary-btn">Shop now</span>
+          </div>
         </div>
 
-        <div>
-          <img src="" alt="" />
-          <h3>Copilot+ PCs for Business</h3>
-          <p>
-            Surface Pro for Business and Surface Laptop for Business unlock new
-            AI-accelerated features like Recall and Windows Studio Effects.
-          </p>
-          <span>Learn more about Surface Pro for Business</span>
-          <span>Learn more about Surface Laptop for Business</span>
+        <div class="copilot-card">
+          <img
+            src="./assets/card-images/surface-laptop-7-pro-206x230.avif"
+            alt="two open laptops"
+          />
+
+          <div class="copilot-card-body">
+            <h3>Copilot+ PCs for Business</h3>
+            <p>
+              Surface Pro for Business and Surface Laptop for Business unlock
+              new AI-accelerated features like Recall and Windows Studio
+              Effects.
+            </p>
+            <span class="secondary-btn"
+              >Learn more about Surface Pro for Business</span
+            >
+            <span class="surface-learn-more"
+              >Learn more about Surface Laptop for Business
+            </span>
+          </div>
         </div>
 
-        <div>
-          <img src="" alt="" />
-          <span>New</span>
-          <h3>Copilot for Microsoft 365</h3>
-          <p>
-            Save time and focus on the things that matter most with AI in
-            Microsoft 365 for business.
-          </p>
-          <span>Learn more</span>
+        <div class="card">
+          <img
+            src="/assets/card-images/copilot-commercial-297x167.avif"
+            alt="window open with copilot running"
+          />
+
+          <div class="card-body">
+            <span class="new">New</span>
+            <h3>Copilot for Microsoft 365</h3>
+            <p>
+              Save time and focus on the things that matter most with AI in
+              Microsoft 365 for business.
+            </p>
+            <span class="secondary-btn">Learn more</span>
+          </div>
         </div>
 
-        <div>
-          <img src="" alt="" />
-          <span>New</span>
-          <h3>Xbox Series S</h3>
-          <p>Next-gen performance in the smallest Xbox ever.</p>
-          <span>Shop Xbox Series S</span>
-        </div>
-
-        <div>
-          <img src="" alt="" />
-
-          <h3>Windows 11 for business</h3>
-          <p>
-            Designed for hybrid work. Powerful for employees. Consistent for IT.
-            Secure for all.
-          </p>
-          <span>Learn More</span>
+        <div class="card">
+          <img
+            src="./assets/card-images/windows-11-business-406x230.jpg"
+            alt="computer open runninng windows 11"
+          />
+          <div class="card-body">
+            <span class="new">New</span>
+            <h3>Windows 11 for business</h3>
+            <p>
+              Designed for hybrid work. Powerful for employees. Consistent for
+              IT. Secure for all.
+            </p>
+            <span class="secondary-btn">Learn More</span>
+          </div>
         </div>
       </section>
 
       <section class="follow">
-        <p>Follor Microsoft</p>
-        <span>Back to top</span>
+        <h3>Follow Microsoft</h3>
+        <div class="socials">
+          <img src="./assets/socials/facebook.avif" alt="facebook icon" />
+          <img src="./assets/socials/x.webp" alt="x logo" />
+          <img src="./assets/socials/youTube.webp" alt="youtube logo" />
+          <img src="./assets/socials/instagram.webp" alt="instagram logo" />
+        </div>
+        <span class="to-top">Back to top</span>
       </section>
     </main>
 
     <footer>
       <nav>
         <ul>
-          <li>What's new</li>
-          <li>Surface Pro</li>
-          <li>Surface Laptop</li>
-          <li>Surface Laptop Studio 2</li>
-          <li>Surface Laptop Go 3</li>
-          <li>Microsoft Copilot</li>
-          <li>Copilot in Windows</li>
-          <li>Microsoft 365</li>
-          <li>Windows 11 apps</li>
+          <li><h4>What's new</h4></li>
+          <li><a href="">Surface Pro</a></li>
+          <li><a href="">Surface Laptop</a></li>
+          <li><a href="">Surface Laptop Studio 2</a></li>
+          <li><a href="">Surface Laptop Go 3</a></li>
+          <li><a href="">Microsoft Copilot</a></li>
+          <li><a href="">Copilot in Windows</a></li>
+          <li><a href="">Microsoft 365</a></li>
+          <li><a href="">Windows 11 apps</a></li>
         </ul>
 
         <ul>
-          <li>Microsoft Store</li>
-          <li>Account profile</li>
-          <li>Download Center</li>
-          <li>Microsoft Store Support</li>
-          <li>Returns</li>
-          <li>Order tracking</li>
-          <li>Microsoft Experience Centre</li>
-          <li>Recycling</li>
-          <li>Microsoft Store Promise</li>
+          <li><h4>Microsoft Store</h4></li>
+          <li><a href="">Account profile</a></li>
+          <li><a href="">Download Center</a></li>
+          <li><a href="">Microsoft Store Support</a></li>
+          <li><a href="">Returns</a></li>
+          <li><a href="">Order tracking</a></li>
+          <li><a href="">Microsoft Experience Centre</a></li>
+          <li><a href="">Recycling</a></li>
+          <li><a href="">Microsoft Store Promise</a></li>
         </ul>
 
         <ul>
-          <li>Education</li>
-          <li>Microsoft in education</li>
-          <li>Devices for education</li>
-          <li>Microsoft Teams for Education</li>
-          <li>Microsoft 365 Education</li>
-          <li>Office Education</li>
-          <li>Educator training and development</li>
-          <li>Deals for students and parents</li>
-          <li>Azure for students</li>
+          <li><h4>Education</h4></li>
+          <li><a href="">Microsoft in education</a></li>
+          <li><a href="">Devices for education</a></li>
+          <li><a href="">Microsoft Teams for Education</a></li>
+          <li><a href="">Microsoft 365 Education</a></li>
+          <li><a href="">Office Education</a></li>
+          <li><a href="">Educator training and development</a></li>
+          <li><a href="">Deals for students and parents</a></li>
+          <li><a href="">Azure for students</a></li>
         </ul>
 
         <ul>
-          <li>Business</li>
-          <li>Microsoft Cloud</li>
-          <li>Microsoft Security</li>
-          <li>Azure</li>
-          <li>Dynamics 365</li>
-          <li>Microsoft 365</li>
-          <li>Copilot for Microsoft 365</li>
-          <li>Microsoft Teams</li>
-          <li>Small Business</li>
+          <li><h4>Business</h4></li>
+          <li><a href="">Microsoft Cloud</a></li>
+          <li><a href="">Microsoft Security</a></li>
+          <li><a href="">Azure</a></li>
+          <li><a href="">Dynamics 365</a></li>
+          <li><a href="">Microsoft 365</a></li>
+          <li><a href="">Copilot for Microsoft 365</a></li>
+          <li><a href="">Microsoft Teams</a></li>
+          <li><a href="">Small Business</a></li>
         </ul>
 
         <ul>
-          <li>Developer & IT</li>
-          <li>Developer Center</li>
-          <li>Documentation</li>
-          <li>Microsoft Learn</li>
-          <li>Microsoft Tech Community</li>
-          <li>Azure Marketplace</li>
-          <li>AppSource</li>
-          <li>Microsoft Power Platform</li>
-          <li>Microsoft Power Platform</li>
-          <li>Visual Studio</li>
+          <li><h4>Developer & IT</h4></li>
+          <li><a href="">Developer Center</a></li>
+          <li><a href="">Documentation</a></li>
+          <li><a href="">Microsoft Learn</a></li>
+          <li><a href="">Microsoft Tech Community</a></li>
+          <li><a href="">Azure Marketplace</a></li>
+          <li><a href="">AppSource</a></li>
+          <li><a href="">Microsoft Power Platform</a></li>
+          <li><a href="">Microsoft Power Platform</a></li>
+          <li><a href="">Visual Studio</a></li>
         </ul>
 
         <ul>
-          <li>Company</li>
-          <li>Careers</li>
-          <li>About Microsoft</li>
-          <li>Company news</li>
-          <li>Privacy at Microsoft</li>
-          <li>Investors</li>
-          <li>Sustainability</li>
+          <li><h4>Company</h4></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">About Microsoft</a></li>
+          <li><a href="">Company news</a></li>
+          <li><a href="">Privacy at Microsoft</a></li>
+          <li><a href="">Investors</a></li>
+          <li><a href="">Sustainability</a></li>
         </ul>
       </nav>
 
-      <div>
+      <div class="upper-links">
         <div><p>English (United Kingdom)</p></div>
         <div><p>Your Privacy Choices</p></div>
-        <p>Cosumer Health Privcy</p>
+        <p>Consumer Health Privcy</p>
       </div>
-    </footer>
 
-    <nav>
-      <ul>
-        <li>Contact Microsoft</li>
-        <li>Privacy</li>
-        <li>Manage cookies</li>
-        <li>Terms of use</li>
-        <li>Trademarks</li>
-        <li>About our ads</li>
-        <li>EU Compliance DoCs</li>
-        <li>Regulatory reporting</li>
-        <li>&copy; Microsoft 2024</li>
-      </ul>
-    </nav>
+      <nav>
+        <ul class="bottom-links">
+          <li><a href="">Contact Microsoft</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Manage cookies</a></li>
+          <li><a href="">Terms of use</a></li>
+          <li><a href="">Trademarks</a></li>
+          <li><a href="">About our ads</a></li>
+          <li><a href="">EU Compliance DoCs</a></li>
+          <li><a href="">Regulatory reporting</a></li>
+          <li><a href="">&copy; Microsoft 2024</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

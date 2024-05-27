@@ -13,8 +13,17 @@
 //   src: url(./assets/fonts/light.woff2);
 // }
 
-
 //hide menu
+@mixin chevron($transform) {
+  content: " ";
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  height: 7px;
+  width: 7px;
+  transform: $transform;
+}
+
 .main-menu {
   display: none;
   font-family: "Segoe UI Normal", Arial, Helvetica, sans-serif;
@@ -47,14 +56,8 @@
     width: 100%;
 
     //create chevron
-    .chevron:after {
-      content: " ";
-      display: inline-block;
-      border-bottom: 1px solid #000;
-      border-right: 1px solid #000;
-      height: 7px;
-      width: 7px;
-      transform: rotate(45deg);
+    .chevron::after {
+      @include chevron(45deg);
     }
   }
 }
@@ -79,6 +82,12 @@
 #open-sub-menu-5:checked ~ .sub-menu-5,
 #open-sub-menu-6:checked ~ .sub-menu-6 {
   display: initial;
+}
+
+#hamburger:checked ~ .hamburger {
+  .burger {
+    color: red;
+  }
 }
 
 //hide checkbox

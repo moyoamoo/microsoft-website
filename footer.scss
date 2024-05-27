@@ -1,0 +1,42 @@
+footer {
+  background-color: var(--accent-1);
+  color: var(--footer-text);
+  padding: 2rem;
+
+  a:hover{
+    color: #000;
+    text-decoration: underline;
+  }
+
+  h4 {
+    font-family: "Segoe UI Semibold", "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: -5px;
+  }
+  nav ul {
+    font-family: "Segoe UI Normal", "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+
+    li {
+      padding: 0.8rem;
+    }
+
+   
+  }
+}
+
+.upper-links{
+    font-family: "Segoe UI Normal", "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+
+}
+
+
+
+.bottom-links{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        margin-bottom: -10px;
+    }
+}

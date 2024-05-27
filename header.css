@@ -24,14 +24,14 @@
   align-items: center;
   width: 100%;
 }
-.main-menu label .chevron:after {
+.main-menu label .chevron::after {
   content: " ";
   display: inline-block;
   border-bottom: 1px solid #000;
   border-right: 1px solid #000;
   height: 7px;
   width: 7px;
-  transform: rotate(45deg);
+  transform: 45deg;
 }
 
 .burger div {
@@ -49,6 +49,10 @@
 #open-sub-menu-5:checked ~ .sub-menu-5,
 #open-sub-menu-6:checked ~ .sub-menu-6 {
   display: initial;
+}
+
+#hamburger:checked ~ .hamburger .burger {
+  color: red;
 }
 
 #hamburger,

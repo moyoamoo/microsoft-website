@@ -3,6 +3,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
+  padding: 2rem;
 }
 .links div {
   display: flex;
@@ -74,11 +75,21 @@
   height: 40vh;
 }
 
-.copilot {
+.copilot,
+.business {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  gap: 40px;
+}
+.copilot h2,
+.business h2 {
+  width: 90%;
+  text-align: left;
+  margin-bottom: -30px;
+  font-family: "Segoe UI Semibold", "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
 .copilot-card {
@@ -96,4 +107,51 @@
   font-family: "Segoe UI Normal", "Segoe UI", Arial, Helvetica, sans-serif;
   margin-top: -15px;
   margin-bottom: 40px;
+}
+
+.surface-learn-more {
+  color: var(--accent-2);
+}
+.surface-learn-more:hover {
+  text-decoration: underline;
+  margin-top: 10px;
+}
+.surface-learn-more i {
+  color: var(--accent-2);
+  font-size: 25px;
+}
+
+.follow {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.follow h3 {
+  font-family: "Segoe UI Normal", "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.follow div {
+  margin-top: -12px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.follow img {
+  width: 40px;
+}
+
+.to-top {
+  background-color: var(--accent-3);
+  padding: 1rem;
+  font-family: "Segoe UI Semibold", "Segoe UI", Arial, Helvetica, sans-serif;
+  color: #000;
+}
+.to-top:hover {
+  background-color: #fff;
+  box-shadow: 2px 2px 1px 0px #eee;
 }/*# sourceMappingURL=main.css.map */
